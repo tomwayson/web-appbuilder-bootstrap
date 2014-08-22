@@ -1,0 +1,71 @@
+<div>
+  <h3>${nls.widgetTitle}</h3>
+  <p>${nls.description}</p>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#buttons" role="tab" data-toggle="tab">Buttons</a></li>
+    <li><a href="#icons" role="tab" data-toggle="tab">Icons</a></li>
+    <li><a href="#dropdowns" role="tab" data-toggle="tab">Dropdowns</a></li>
+    <li><a href="#more" role="tab" data-toggle="tab">More...</a></li>
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane active" id="buttons">
+      <p>Bootstrap styled buttons</p>
+      <!-- Standard button -->
+      <button type="button" class="btn btn-default">Default</button>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-primary">Primary</button>
+      <!-- Indicates a successful or positive action -->
+      <button type="button" class="btn btn-success">Success</button>
+      <!-- Contextual button for informational alert messages -->
+      <button type="button" class="btn btn-info">Info</button>
+      <!-- Indicates caution should be taken with this action -->
+      <button type="button" class="btn btn-warning">Warning</button>
+      <!-- Indicates a dangerous or potentially negative action -->
+      <button type="button" class="btn btn-danger">Danger</button>
+      <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+      <button type="button" class="btn btn-link">Link</button>
+    </div>
+    <div class="tab-pane" id="icons">
+      <p>You're such a <span class="glyphicon glyphicon-star"></span>!</p>
+      <button type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-pencil"></span> Edit
+      </button>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-map-marker"></span></button>
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-comment"></span></button>
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-tag"></button>
+      </div>
+    </div>
+    <div class="tab-pane" id="dropdowns">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+          Dropdown
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tab-pane" id="more">
+      <p>And so much more!!!</p>
+      <p>Head on over to <a href="http://xsokev.github.io/Dojo-Bootstrap/">Dojo-Bootstrap</a> to see all the compents that are available to you.</p>
+      <div class="alert alert-warning">
+        <p><strong>Known Issues</strong></p>
+        <ul>
+          <li>Modals won't work if they are added under a wiget's DOM node (something to do w/ inherited styles, z-index?)</li>
+        </ul>
+      </div>
+      <!-- Button trigger modal -->
+      <p><button class="btn btn-default" data-toggle="modal" data-target="#myModal">
+        Modal Added to Body Tag
+      </button></p>
+    </div>
+  </div>
+</div>
