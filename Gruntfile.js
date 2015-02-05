@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
-    var appDir = 'C:\\code\\test\\arcgis-web-appbuilder-1.0beta2\\server\\apps\\12';
-    var stemappDir = 'C:\\code\\test\\arcgis-web-appbuilder-1.0beta2\\client\\stemapp';
+    var appDir = 'C:\\code\\arcgis-web-appbuilder-1.0\\server\\apps\\4';
+    var stemappDir = 'C:\\code\\arcgis-web-appbuilder-1.0\\client\\stemapp';
 
     grunt.initConfig({
     watch: {
